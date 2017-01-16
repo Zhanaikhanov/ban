@@ -98,6 +98,14 @@ def create_list(number):
 		next_ball = Ball(width1, height1, radius1, color1)
 		lst.append(next_ball)
 		next_ball.draw()
+
+	radius1 = random.choice(range(15 , 30) )
+	height1 = random.choice(range(radius1 , HEIGHT - radius1) )
+	color1 = "red" 	
+	next_ball = Ball(width1, height1, radius1, color1)
+	lst.append(next_ball)
+	next_ball.draw()
+	
 	return lst
 
 
