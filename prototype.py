@@ -108,7 +108,6 @@ class walls():
 
 
     def contact(self):
-        print(1)
         if bullet.x + 15 >= self.x and bullet.x + 15 <=self.x+30 or bullet.x <= self.x+30 and bullet.x + 15 >=self.x+30:   
             if bullet.y+bullet.dy <= self.y+5 and bullet.y+bullet.dy+15 >= self.y+5 :
                 return True
@@ -118,11 +117,9 @@ class walls():
 def pressbutton(event):
     if event.num == 3:
         tank.turn_left()
-        print("3")
     elif event.num == 2 and bullet.fired==0:
         fire()
     elif event.num == 1:
-        print("1")
         tank.turn_right()
 
 def fire():
