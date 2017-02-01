@@ -3,7 +3,7 @@
 import socket
 
 sock = socket.socket()
-sock.connect(("172.16.86.226", 9090))
+sock.connect(('localhost', 80))
 
 while True:
 	name = input("You	:")
